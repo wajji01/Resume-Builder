@@ -6,18 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const eduBtn = document.getElementById('toggleEducationBtn') as HTMLButtonElement;
     const EduSec = document.getElementById('EducationSection') as HTMLElement;
 
-    // const toggleProjectsBtn = document.getElementById('toggleProjectsBtn') as HTMLButtonElement;
-    // const projectsSection = document.getElementById('projectsSection') as HTMLElement;
-
     // Toggle visibility function
-    // const toggleVisibility = (element: HTMLElement) => {
-    //     if (element.classList.contains('hidden')) {
-    //         element.classList.remove('hidden');
-    //     } else {
-    //         element.classList.add('hidden');
-    //     }
-    // };
-
 
     function Skills_Btn(): void {
         if (skillsSection.style.display === 'none') {
@@ -37,23 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
             eduBtn.textContent = 'Show Education';
         }
     }
-
+    
+    // Add event listeners to buttons
+    
         toggleSkillsBtn.addEventListener('click', Skills_Btn);
         eduBtn.addEventListener('click', Edu_Btn);
 
-    
-
-    // Add event listeners to buttons
-    // if (toggleSkillsBtn) {
-    //     toggleSkillsBtn.addEventListener('click', () => toggleVisibility(skillsSection));
-    // }
-
-    // if (toggleCertificationsBtn) {
-    //     toggleCertificationsBtn.addEventListener('click', () => toggleVisibility(certificationsSection));
-    // }
-
-    // if (toggleProjectsBtn) {
-    //     toggleProjectsBtn.addEventListener('click', () => toggleVisibility(projectsSection));
-    // }
  });
 
