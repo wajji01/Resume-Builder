@@ -14,6 +14,7 @@ body {
     margin-bottom: 20px;
 }
 
-.skills ul li {
+#skillsSection ul li {
     font-size: 20px;
 }
+
